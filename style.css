@@ -1,0 +1,629 @@
+
+body
+{
+ padding-top:70px;
+ font-family: 'Slabo 27px', serif;
+ overflow: hidden
+
+}
+.option-box
+{
+ position: fixed;
+ top:100px;
+ left: 0;
+ z-index: 9999
+}
+.option-box .color-option
+{
+ float: left;
+ background:#333;
+ color: #fff;
+ padding: 10px;
+ width: 200px;
+ display: none;
+}
+.option-box .color-option ul li
+{
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 3px;
+cursor: pointer
+}
+.option-box .gear-check
+{
+ padding: 5px;
+ color: #fff;
+  cursor: pointer
+
+}
+.navbar
+{
+ min-height: 70px;
+}
+
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus
+{
+}
+.navbar-inverse .navbar-nav > li > a
+{
+ color: #AAA;
+ padding-top: 25px;
+ padding-bottom: 25px;
+ font-size: 16px
+}
+.navbar-inverse .navbar-brand
+{
+  color: #AAA;
+  font-size: 30px;
+  line-height: 40px
+
+}
+.navbar-inverse .navbar-brand span
+{
+}
+
+.dropdown-menu
+{
+ background-color: #333;
+ min-width: 200px;
+ 
+}
+.navbar-right .dropdown-menu
+{
+ left: 0;
+ right: auto
+}
+.dropdown-menu > li > a
+{
+ color: #fff;
+ padding: 7px 20px;
+ -webkit-transition: padding 0.5s ease;
+ -moz-transition: padding 0.5s ease;
+ -o-transition: padding 0.5s ease;
+ transition: padding 0.5s ease;
+
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus
+{
+  color: #fff;
+  padding-left: 25px;
+}
+.dropdown-menu .divider{background:#862b29;}
+.navbar-toggle{margin-top: 18px;}
+.carousel-caption
+{
+ bottom: 247px;
+ background:rgba(3,3,3,0.3);
+ padding-right: 20px;
+ padding-left: 20px
+}
+.carousel-indicators li
+{
+ height: 15px;
+ width: 15px;
+ border:1px solid #b1a5a5
+}
+.carousel-indicators .active{height: 17px;width: 17px;}
+.carousel-inner > .item > img{ width: 100%}
+.about{ padding-top: 60px; padding-bottom: 60px;}
+.about .lead
+{
+ color: #888;
+ font-size: 25px;
+ margin-top: 15px;: 
+}
+.about h1{ font-weight: bold}
+.about h1 span
+{
+}
+.Features{ background: #EEE; padding-top: 50px; padding-bottom: 50px;}
+.Features .feat p{ line-height: 2em;}
+.Features .feat{ margin-bottom: 30px;}
+
+.Features .feat span.glyphicon
+{
+ font-size: 25px;
+ margin-bottom: 10px;
+ color: #888;
+}
+.testimonials
+{
+ padding-top: 50px;
+ padding-bottom: 50px;
+ 
+}
+.testimonials .lead
+{
+ line-height: 2em;
+}
+.testimonials span
+{
+ font-size: 18px;
+ font-weight: bold;
+}
+.testimonials carousel-inner
+{
+ min-height: 160px
+}
+.testimonials .carousel-indicators
+{
+ position: static;
+ margin-left: auto;
+ width: 100%;
+ padding: 20px
+}
+.testimonials .carousel-indicators li
+{
+ text-indent: 0;
+ width: 80px;
+ height: 80px;
+ opacity: 0.5;
+ border: 3px solid #fff;
+ border-radius: 50%;
+ overflow: hidden;
+ margin: 5px;
+ -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+ -o-transition: all 0.5s ease;
+ transition: all 0.5s ease;
+
+}
+
+.testimonials .carousel-indicators li img
+{
+ max-width: 100%;
+ max-height: 100%;
+
+}
+.testimonials .carousel-indicators li.active
+{
+ opacity: 1;
+ background: none;
+  width: 80px;
+ height: 80px
+}
+.price_table
+{
+ background: #EEE;
+ padding-bottom: 40px;
+ padding-top: 40px;
+}
+.price_table .price_box
+{
+ background: #FFF;
+ padding: 10px;
+ border: 1px solid #DDD;
+ margin-bottom: 15px
+}
+.price_table .price_box h2
+{
+ margin: 5px 0px 15px;
+}
+.price_table .price_box:hover p
+{
+ -webkit-transform: scale(1.1,1.1) rotate(360deg);
+  -moz-transform: scale(1.1,1.1) rotate(360deg);
+ -o-transform: scale(1.1,1.1) rotate(360deg);
+  transform: scale(1.1,1.1) rotate(360deg);
+   border:2px solid #DFDFDF;
+
+
+}
+
+.price_table .price_box p
+{
+ font-size: 35px;
+ color: #666;
+ font-weight: bold;
+ width: 100px;
+ height: 100px;
+ background: #F3F3F3;
+ border-radius: 50%;
+ line-height: 100px;
+ border:2px solid #FFF;
+ 
+
+}
+.price_table .price_box ul
+{
+ line-height: 250%;
+ font-size: 18px
+}
+.price_table .price_box a
+{
+ margin-bottom: 5px
+}
+.Our_team
+{
+ background: url("file:///C:/Users/Smart/Downloads/image/beverage-coffee-computer-877695.jpg") no-repeat center center fixed;
+ -webkit-background-size: cover;
+  -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+ min-height: 600px
+}
+.Our_team .team
+{
+ background: rgba(2,2,2,0.8);
+ height: 600px;
+ color: white;
+ padding-top: 30px;
+ padding-bottom: 30px
+}
+.person .lead 
+{
+  font-size: 15px;
+
+}
+
+.person img
+{
+ border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+.Our_team .person
+{
+ margin-bottom: 30px
+}
+.Subscribe
+{
+ padding-top: 40px;
+ padding-bottom: 40px;
+ background: #EEE;
+}
+.Subscribe .h1
+{
+ color: #888;
+ letter-spacing: 2px;
+ margin-bottom: 20px
+}
+.Subscribe p
+{
+ margin-bottom: 30px
+}
+.Subscribe .form-control
+{
+ border-radius: 0;
+ width: 300px;
+ margin-right: -5px;
+}
+.Subscribe button
+{
+  border-radius: 0;
+
+}
+.Statistics
+{
+ background: url("file:///C:/Users/Smart/Downloads/image/calculator-clipboard-coffee-cup-1001763.jpg") no-repeat center center fixed;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+
+ min-height: 300px
+}
+.Statistics .data
+{
+ background:rgba(2,2,2,0.8);
+ color: #B6B5B5;
+ padding-top: 40PX;
+ padding-bottom: 70PX;
+ min-height: 300PX;
+}
+.Statistics .stats
+{
+ 
+ margin-bottom: 30px
+
+}
+.Statistics .stats:hover
+{
+ color: white
+}
+.Statistics p
+{
+ font-size: 60px;
+ font-weight: bold;
+ margin-bottom: 0
+ 
+}
+.Statistics span
+{
+ font-size: 17px
+}
+.our-skills
+{
+ padding-top: 40px;
+ padding-bottom: 70px
+}
+.our-skills h3
+{
+ font-weight: bold;
+ margin-top: 0
+}
+.our-skills .progress
+{
+ height: 36px
+}
+
+.our-skills .progress-bar
+{
+ line-height: 36px;
+ font-size: 15px;
+ font-weight: bold;
+ text-align: left;
+ text-indent: 10px
+}
+.contact-us
+{
+ background: url("file:///C:/Users/Smart/Downloads/image/apple-computer-desk-209151.jpg") no-repeat center center fixed;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+min-height: 300px
+}
+
+.contact-us .fields
+{
+ background:rgba(9,9,9,0.8);
+ color: #DDD;
+ min-height: 300px;
+ padding-top: 40px;
+ padding-bottom: 40px
+}
+.contact-us p
+{
+ margin-bottom: 40px
+}
+.contact-us textarea
+{
+ height: 106px
+}
+.contact-us input[type="text"], .contact-us textarea
+{
+  background:rgba(82,78,78,0.5);
+  border: none;
+  color: #fff
+
+}
+.our-clients
+{
+background:#EEE;
+padding-top: 20px;
+padding-bottom: 20px
+}
+.our-clients img
+{
+ opacity: 0.4;
+ filter: alpha(opacity=40);
+ margin-top: 20px;
+ margin-bottom: 20px;
+ 
+
+}
+.our-clients img:hover
+{
+ opacity: 1
+}
+
+
+.footer
+{
+ background:#333;
+ color: #AAA;
+ padding-top: 10px;
+}
+.footer a
+{
+ color: #AAA;
+}
+.footer a:hover
+{
+ color: white
+}
+.footer h3
+{
+ color: #0895D1;
+ letter-spacing: 1px;
+ margin: 30px 0 20px
+}
+.footer .three-columns
+{
+ overflow: hidden;
+}
+.footer .three-columns li
+{
+ width: 33.3333%;
+ float: left;
+ padding: 5px 0
+}
+.footer .social-list
+{
+ overflow: hidden;
+ margin: 20px 0 10px;
+}
+.footer .social-list li
+{
+ float: right;
+ margin-right: 3px;
+ opacity: 0.7;
+ 
+}
+.footer .social-list li:hover
+{
+ opacity: 1
+}
+
+.footer .social-list img
+{
+ vertical-align: middle;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+}
+.footer .media-object
+{
+ width: 64px;
+ height: 64px;
+}
+.footer img
+{
+ width: 150px;
+ height: 100px
+}
+.footer .img-thumbnail
+{
+ background: rgba(0,0,0,0.2);
+ border: 1px solid #444;
+ margin-bottom: 5px
+}
+.footer .copyright
+{
+ background:#222;
+ color: #AAA;
+ padding: 15px 0;
+ margin-top: 30px;
+ font-size: 18px
+}
+.footer .copyright span
+{
+  color: #0895D1;
+
+}
+.loading-overlay
+{
+  background:#222;
+  color: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}
+.spinner {
+  width: 60px;
+  height: 60px;
+
+  position: relative;
+  margin: 300px auto;
+}
+
+.double-bounce1, .double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #333;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+  0%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+   #scroll-top
+ {
+  width: 50px;
+  height: 40px;
+  color: #DDD;
+  text-align: center;
+  background-color: #272727;
+  position: fixed;
+  right: 15px;
+  bottom: 10px;
+  z-index: 9999;
+  display: none;
+  cursor:pointer;
+  
+ }
+ .Features .h1,
+ .testimonials.h1,
+ .price_table .h1,
+ .Our_team .h1,
+ .Statistics .h1,
+ .our-skills .h1
+ {
+  font-weight: bold;
+  margin-bottom: 50px;
+ }
+.footer .social-list li,
+.our-clients img,
+.Statistics .stats,
+.price_table .price_box p
+{
+ -webkit-transition: all 0.7s ease-in-out;
+ -moz-transition: all 0.7s ease-in-out;
+ -o-transition: all 0.7s ease-in-out;
+ transition: all 0.7s ease-in-out;
+}
+
+
+/* Smart Phone And Taplet */
+
+@media (max-width:767px)
+{
+.navbar-inverse .navbar-nav > li > a
+{
+ padding-top: 10px;
+ padding-bottom: 10px;
+ }
+ .Subscribe .form-control
+ {
+  margin: 20px auto;
+  width: 400px;
+ }
+ .navbar-fixed-top .navbar-collapse,
+ .navbar-fixed-bottom .navbar-collapse
+ {
+  max-height: none;
+ }
+ 
+ 
+
+/* Small Screen */  
+@media (min-width:768px) and (max-width:991px)
+{
+
+}
+
+
+/*Meduim Screen */
+@media (min-width:992px) and (max-width:1199px)
+{
+ 
+}
+
+
+/* Large Screen */
+@media (min-width:1200px)
+{
+ 
+}
