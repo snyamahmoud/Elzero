@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset='UTF_8'/>
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">          <!-- يتم كتابتها من صفحة ال bootstrap -->
+            <meta name="viewport" content="width=device-width, initial-scale=1">    <!-- يتم كتابتها من صفحة ال bootstrap -->
+            <title>course bootstrap3</title>
+            <link rel="stylesheet" href="css/bootstrap.css"/> <!--  bootstrap الاصلي ملف ال -->
+            <!--<link rel="stylesheet" href="css/bootstrap RTL.css"/> -->  <!--  ملف يتم انشائه لعمل الموقع عربي -->
+            <link rel="stylesheet" href="css/media.css"/>          <!-- ملف الmedia query -->
+            <link rel="stylesheet" href="css/font-awesome.min.css"/> <!-- ملف يتم تنزيله لاستخدام الايقونات -->
+            <link rel="stylesheet" href="css/style.css"/>          <!-- ملف ال style الاصلي -->
+            <link rel="stylesheet" href="css/default-theme.css"/>      <!-- ملف يتم انشائه لعمل اي تعديلات علي ملف ال style -->
+            <link rel="stylesheet" href="css/hover.css"/>            <!-- ملف لعمل hover علي العنصر-->
+            <link rel="stylesheet" href="css/animate.css"/>          <!-- ملف لعمل animate علي العنصر -->
+            <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">       <!-- ملف لاستخدام انواع خطوط للكتابة -->
+
+
+            <!--[if lt IE 9]->
+            <script src="js/html5shiv.min.js"></script>
+            <script src="js/respond.min.js"></script>
+            <![endif]-->
+
+        </head>
+        <body>
+         <!-- Start Tool box -->
+         <section class="option-box"> <!-- عبارة عن سيكشن يتم وضع فيه مجموعة من الالوان الخاصة بالموقع -->
+           <div class="color-option">
+            <h4>Color Option</h4>
+            <ul class="list-unstyled">          <!--list-unstyled يتم استخدامها لحذف ال polts  الخاصة ب ul --> 
+             <li data-value="css/default-theme.css"></li>         <!-- عبارة عن li يوضع فيه الالوان , اولا اللون الاحمر -->
+             <li data-value="css/purple-theme.css"></li>           <!-- purple اللون ال -->
+             <li data-value="css/blue-theme.css"></li>          <!-- اللون ال الازرق -->
+             <li data-value="css/yellow-theme.css"></li>         <!-- اللون الاصفر -->
+ 
+            </ul>
+           </div>
+           <i class="fa fa-gear fa-3x gear-check"></i> <!-- عبارة عن الfont Awesom الخاص بالايقونات -->
+         </section>
+         <!-- End Tool box -->
+
+           <!-- Start our Navbar-->
+           <nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">    <!-- navbar عبارة عن اول header يوضع فيه المعلومات الخاصة بالموقع -->
+             <div class="container"> <!-- navbar-default ده عبارة عن الوضع الطبيعي لل Nav, navbar-inverse بيعكس اللون الاصلي,navbar-fixed-top بيحافظ علي وضع ال Nav في اول الصفحة مهما عملنا scroll -->
+                   <div class="navbar-header">
+                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar"> <!-- عبارة عن زر مكون من ثلاثة شروط وهي تظهر فقط في شاشات الموبايل والتاب -->
+                      <span class="sr-only">Toggle navigation</span> <!-- ال span هي عبارة عن الخطوط -->
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span><!-- privet the smart phone-->
+                      <span class="icon-bar"></span>
+                    </button>
+                      <a class="navbar-brand pop" href="#">Elzero<span>Inc</span> </a> <!-- navbar-brand عبارة عن class  يكتب فيه عنوان الموقع, ال pop عبارة عن hover -->
+                 </div>
+
+              <div class="collapse navbar-collapse" id="navbar">
+              <ul class="nav navbar-nav navbar-right"><!--navbar-right يحوله الي الاتجاه اليمين -->
+
+                 <li class="active"><a href="index.html">Home</a></li><!--active كلاس ال يجعل العنصر مفعل,index.html عند الضغط علي home يذهب الي index.html  -->
+
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="#">FAQ</a></li>
+
+                <li class="dropdown"><!-- dropdown هي عبارة عن قائمة تحتوي علي معلومات -->
+                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Programming</a></li>
+                    <li><a href="#">Web design</a></li>
+                    <li><a href="#">Desktop</a></li>
+                    <li class="divider"></li>   <!--الخط الفاصل بينهم-->
+                    <li><a href="#">Web Hosting</a></li>
+                  </ul>
+                 <li><a href="#">Map</a></li>
+                 <li><a href="#">Contact</a></li>
+               </li>
+              </ul>
+
+
+          </div>
+   </div>
+   </nav>
+   <!-- End our Navbar-->
+
+
+    <!--Start carousel-->
+      <div id="Myslide" class="carousel slide hidden-xs" data-ride="carousel"><!-- carousel slide عبارة عن ال polts النقط -->
+       <ol class="carousel-indicators">
+           <li data-target="#Myslide" data-slide-to="0" class="active"></li>
+           <li data-target="#Myslide" data-slide-to="1"></li>
+           <li data-target="#Myslide" data-slide-to="2"></li>
+           <li data-target="#Myslide" data-slide-to="3"></li>
+
+       </ol>
+
+   <div class="carousel-inner">
+    <div class="item active">   <!-- عبارة عن الكلاس الذي يوضع فيه الصور ولا بد من وضع كلاس active علي اول صورة حتي يعمل -->
+      <img src="file:///C:/Users/Smart/Downloads/image/apple-black-coffee-business-461064.jpg" alt="pic1">
+        <div class="carousel-caption">
+           <h1>Programming</h1>
+            <p class="lead"><!-- كلاس ال lead يقوم بعمل تنسيق لل p ويضع الكلام في الوسط -->
+              Transition animations not supported in Internet Explorer 8 & 9Bootstrap exclusively uses CSS3 for its animations, but Internet Explorer 8 & 9 don't support the necessary CSS properties. Thus, there are no slide transition animations when using these browsers. We have intentionally decided not to include jQuery-based fallbacks for the transitions.
+            </p>
+
+       </div>
+    </div>
+    <div class="item">
+      <img src="file:///C:/Users/Smart/Downloads/image/apple-blur-business-533463.jpg" alt="pic2">
+     <div class="carousel-caption hidden-xs"><!-- hidden-xs هو كلاس خاص بشاشات الموبايل ومعناها اخفاء هذا الكلاس من هذه الشاشات -->
+       <h1>Web Design</h1>
+       <p class="lead">
+         Transition animations not supported in Internet Explorer 8 & 9Bootstrap exclusively uses CSS3 for its animations, but Internet Explorer 8 & 9 don't support the necessary CSS properties. Thus, there are no slide transition animations when using these browsers. We have intentionally decided not to include jQuery-based fallbacks for the transitions.
+       </p>
+     </div>
+    </div>
+    <div class="item">
+      <img src="file:///C:/Users/Smart/Downloads/image/apple-black-coffee-business-461064.jpg" alt="pic3">
+     <div class="carousel-caption hidden-xs">
+       <h1>Desktop</h1>
+       <p class="lead">
+         Transition animations not supported in Internet Explorer 8 & 9Bootstrap exclusively uses CSS3 for its animations, but Internet Explorer 8 & 9 don't support the necessary CSS properties. Thus, there are no slide transition animations when using these browsers. We have intentionally decided not to include jQuery-based fallbacks for the transitions.
+       </p>
+     </div>
+    </div>
+     <div class="item">
+      <img src="file:///C:/Users/Smart/Downloads/image/business-clean-computer-389819.jpg" alt="pic4">
+     <div class="carousel-caption hidden-xs">
+       <h1>Web Hosting</h1>
+       <p class="lead">
+         Transition animations not supported in Internet Explorer 8 & 9Bootstrap exclusively uses CSS3 for its animations, but Internet Explorer 8 & 9 don't support the necessary CSS properties. Thus, there are no slide transition animations when using these browsers. We have intentionally decided not to include jQuery-based fallbacks for the transitions.
+       </p>
+     </div>
+    </div>
+
+
+
+   </div>
+
+ <!-- Controls -->
+   <a class="left carousel-control" href="#Myslide" role="button" data-slide="prev"><!-- هذا الكلاس خاص بالاسهم التي تحرك الصور السابق -->
+   <span class="glyphicon glyphicon-chevron-left"></span>
+ </a>
+ <a class="right carousel-control" href="#Myslide" role="button" data-slide="next"><!-- هذا الكلاس خاص بالاسهم التي تحرك الصور  للتالي -->
+   <span class="glyphicon glyphicon-chevron-right"></span>
+ </a>
+</div>
+ <!--End carousel-->
+
+ <!--start Section about-->
+
+ <section class="about text-center wow bounceIn" data-wow-duration="2s" data-wow-delay="3s" data-wow-offset="300" data-wow-iteration="3">
+   <div class="container"><!-- كلاس ال text-center يجعل العنصر في الوسط , wow bounceIn هو عبارة عن كلاس خاص ب ال animate -->
+     <h1 class="hidden-xs">Meet our New Template<span>Elzero Ink</span></h1><!-- الكلاس hidden-xs خاص بالشاشات الموبايل والتاب-->
+     <h3 class="visible-xs">Meet our New Template<span>Elzero Ink</span></h3>
+
+     <p class="lead">Hello let Me Introduce Our New Template Elzero Ink.Created With All The Love With <strong>Bootstrap</strong>3.2.0</p>
+   </div>
+
+ </section>
+
+
+ <!--End Section about-->
+
+ <!--Start Section Features-->
+
+ <section class="Features text-center"><!-- text-center هو كلاس يجعل النص في النص -->
+   <div class="container">
+     <h2 class="h1">Our Features</h2>
+
+     <div class="row">
+       <div class="col-lg-3 col-md-6"><!-- عبارة عن gray system يقسم العناصر علي حسب الشاشات -->
+         <div class="feat wow bounceInLeft" data-wow-duration="2s" data-wow-offset="200"><!-- هذه الكلاسيس خاصة ب animate-->
+          <span class="glyphicon glyphicon-ok"></span><!-- عبارة عن كلاس خاص بال font Awosome الايقونات -->
+          <h4>100% Responsive</h4>
+          <p>For performance reasons, all icons require a base class and individual icon class. To use, place the following code just about anywhere. </p>
+         </div>
+
+       </div>
+       <div class="col-lg-3 col-md-6"><!-- عبارة عن gray system يقسم العناصر علي حسب الشاشات -->
+         <div class="feat wow bounceInUp"data-wow-duration="2s" data-wow-offset="200"><!-- هذه الكلاسيس خاصة ب animate-->
+          <span class="glyphicon glyphicon-eye-open"></span><!-- عبارة عن كلاس خاص بال font Awosome الايقونات -->
+          <h4>Reiel Ready</h4>
+          <p>For performance reasons, all icons require a base class and individual icon class. To use, place the following code just about anywhere.</p>
+         </div>
+
+       </div>
+       <div class="col-lg-3 col-md-6"><!-- عبارة عن gray system يقسم العناصر علي حسب الشاشات -->
+         <div class="feat wow bounceInDown"data-wow-duration="2s" data-wow-offset="200">
+          <span class="glyphicon glyphicon-thumbs-up"></span>
+          <h4>Awesome Display</h4>
+          <p>For performance reasons, all icons require a base class and individual icon class. To use, place the following code just about anywhere.</p>
+         </div>
+
+       </div>
+       <div class="col-lg-3 col-md-6"><!-- عبارة عن gray system يقسم العناصر علي حسب الشاشات -->
+         <div class="feat wow bounceInRight"data-wow-duration="2s" data-wow-offset="200">
+          <span class="glyphicon glyphicon-pencil"></span>
+          <h4>Well Documented</h4>
+          <p>For performance reasons, all icons require a base class and individual icon class. To use, place the following code just about anywhere.</p>
+         </div>
+
+       </div>
+
+
+     </div>
+   </div>
+ </section>
+ <!--End Section Features-->
+
+ <!--Start Section Testimonials-->
+ <section class="testimonials text-center wow flipInY"data-wow-duration="1s" data-wow-offset="300">
+   <div class="container">
+     <h2 class="h1">What Our Clients Say</h2>
+      <!--Start carousel testimonials-->
+      <div id="carousel_testimonials" class="carousel slide" data-ride="carousel">
+       <div class="carousel-inner">
+         <div class="item active">
+            <p class="lead">
+              Transition animations not supported in Internet Explorer 8 & 9Bootstrap exclusively uses CSS3 for its animations, but Internet Explorer 8 & 9 don't support the necessary CSS properties. Thus, there are no slide transition animations when using these browsers. We have intentionally decided not to include jQuery-based fallbacks for the transitions.
+            </p>
+            <span>Osama Elzero</span>
+         </div>
+          <div class="item">
+            <p class="lead">
+             Transition animations not supported in Internet Explorer 8 & 9Bootstrap exclusively uses CSS3 for its animations, but Internet Explorer 8 & 9 don't support the necessary CSS properties. Thus, there are no slide transition animations when using these browsers. We have intentionally decided not to include jQuery-based fallbacks for the transitions.
+           </p>
+            <span>Hassan Zohdy</span>
+        </div>
+    <div class="item">
+       <p class="lead">
+         Transition animations not supported in Internet Explorer 8 & 9Bootstrap exclusively uses CSS3 for its animations, but Internet Explorer 8 & 9 don't support the necessary CSS properties. Thus, there are no slide transition animations when using these browsers. We have intentionally decided not to include jQuery-based fallbacks for the transitions.
+       </p>
+      <span>Hind Ragab</span>
+    </div>
+     <div class="item">
+            <p class="lead">
+              Transition animations not supported in Internet Explorer 8 & 9Bootstrap exclusively uses CSS3 for its animations, but Internet Explorer 8 & 9 don't support the necessary CSS properties. Thus, there are no slide transition animations when using these browsers. We have intentionally decided not to include jQuery-based fallbacks for the transitions.
+            </p>
+           <span>Zahra Ahmed</span>
+     </div>
+           <ol class="carousel-indicators">
+             <li data-target="#carousel_testimonials" data-slide-to="0" class="active">
+               <img src="file:///D:/Bootstrap3/smiling-avatar-boy-graphic-vector-9437562.jpg" alt="Osama"/>
+             </li>
+             <li data-target="#carousel_testimonials" data-slide-to="1">
+               <img src="file:///D:/Bootstrap3/thumb-male-avatar-icon-flat-style-happy.jpg" alt="Hassan"/>
+
+             </li>
+             <li data-target="#carousel_testimonials" data-slide-to="2">
+               <img src="file:///D:/Bootstrap3/vector-avatar-male-female-5.png" alt="Hind">
+             </li>
+             <li data-target="#carousel_testimonials" data-slide-to="3">
+               <img src="file:///D:/Bootstrap3/avatar-icon-of-girl-in-a-baseball-cap-vector-16225068.jpg" alt="Zahra"/>
+             </li>
+
+           </ol>
+
+
+
+   </div>
+
+
+</div>
+   <!--End carousel Testimonials-->
+ </section>
+ <!--End Section Testimonials-->
+
+ <!--Start Section Table Price-->
+ <section class="price_table text-center">
+   <div class="container">
+     <h2 class="h1">Our Amazing Prices</h2>
+     <div class="row">
+       <div class="col-md-3 col-sm-6 col-xs-12">
+         <div class="price_box wow fadeInUp data-wow-duration="2s" data-wow-offset="400">
+           <h2 class="text-primary">Hosting</h2>
+           <p class="center-block">$30</p>
+           <ul class="list-unstyled">
+             <li>space: 30GB</li>
+             <li>Emails: 30</li>
+             <li>Ips: 3 Ip</li>
+             <li>Database: 10</li>
+             <li>Ftp Accounts: 5</li>
+           </ul>
+           <a href="#" class="btn btn-primary">Order Now</a>
+         </div>
+       </div>
+       <div class="col-md-3 col-sm-6 col-xs-12">
+           <div class="price_box wow fadeInDown data-wow-duration="2s" data-wow-offset="400"">
+             <h2 class="text-success">Vps</h2>
+             <p class="center-block">$40</p>
+             <ul class="list-unstyled">
+               <li>space: 40GB</li>
+               <li>Emails: 40</li>
+               <li>Ips: 4 Ip</li>
+               <li>Database: 20</li>
+               <li>Ftp Accounts: 10</li>
+             </ul>
+             <a href="#" class="btn btn-success">Order Now</a>
+         </div>
+       </div>
+       <div class="col-md-3 col-sm-6 col-xs-12">
+           <div class="price_box wow fadeInUp data-wow-duration="2s" data-wow-offset="400"">
+             <h2 class="text-info">Dedicated</h2>
+             <p class="center-block">$50</p>
+             <ul class="list-unstyled">
+               <li>space: 50GB</li>
+               <li>Emails: 50</li>
+               <li>Ips: 5 Ip</li>
+               <li>Database: 50</li>
+               <li>Ftp Accounts: 20</li>
+             </ul>
+             <a href="#" class="btn btn-info">Order Now</a>
+         </div>
+       </div>
+       <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="price_box wow fadeInDown data-wow-duration="2s" data-wow-offset="400"">
+             <h2 class="text-danger">Cloud</h2>
+             <p class="center-block">$60</p>
+             <ul class="list-unstyled">
+               <li>space: 60GB</li>
+               <li>Emails: 60</li>
+               <li>Ips: 6 Ip</li>
+               <li>Database: 30</li>
+               <li>Ftp Accounts: 30</li>
+             </ul>
+             <a href="#" class="btn btn-danger">Order Now</a>
+            </div>
+       </div>
+     </div>
+   </div>
+ </section>
+ <!--End Section Table Price-->
+ <!--Start Section Our Team-->
+ <section class="Our_team text-center">
+   <div class="team">
+     <div class="container">
+      <h2 class="h1">Meet Our Awesome Team</h2>
+      <div class="row">
+       <div class="col-lg-3 col-sm-6">
+         <div class="person wow pulse" data-wow-duration="1s" data-wow-offset="400">
+           <img class="img-circle" src="file:///D:/Bootstrap3/adult-beard-boy-220453.jpg" alt="fun-good"/>
+           <h3>Joun</h3>
+           <p class="lead">This is fun-good image he is very beautiful smile,he is very person</p>
+           <i class="fa fa-google-plus-square fa-lg"></i>
+           <i class="fa fa-facebook-square fa-lg"></i>
+           <i class="fa fa-twitter-square fa-lg"></i>
+           <i class="fa fa-youtube-square fa-lg"></i>
+         </div>
+       </div>
+       <div class="col-lg-3 col-sm-6">
+         <div class="person wow pulse" data-wow-duration="1s" data-wow-offset="400"">
+           <img class="img-circle" src="file:///D:/Bootstrap3/black-and-white-fun-good-looking-91227.jpg" alt="beard"/>
+           <h3>Mark</h3>
+           <p class="lead"> This is adult-beard-boy image he is funy boy,he is very person </p>
+           <i class="fa fa-google-plus-square fa-lg"></i>
+           <i class="fa fa-facebook-square fa-lg"></i>
+           <i class="fa fa-twitter-square fa-lg"></i>
+           <i class="fa fa-youtube-square fa-lg"></i>
+         </div>
+       </div>
+       <div class="col-lg-3 col-sm-6">
+         <div class="person wow pulse" data-wow-duration="1s" data-wow-offset="400">
+           <img class="img-circle" src="file:///D:/Bootstrap3/beanie-beautiful-blonde-324658.jpg" alt="brunette"/>
+           <h3>Kresten</h3>
+           <p class="lead">This is beautiful-brunette-cute image she is funy girl i love her </p>
+           <i class="fa fa-google-plus-square fa-lg"></i>
+           <i class="fa fa-facebook-square fa-lg"></i>
+           <i class="fa fa-twitter-square fa-lg"></i>
+           <i class="fa fa-youtube-square fa-lg"></i>
+         </div>
+       </div>
+       <div class="col-lg-3 col-sm-6">
+         <div class="person wow pulse" data-wow-duration="1s" data-wow-offset="400">
+           <img class="img-circle" src="file:///D:/Bootstrap3/beautiful-brunette-cute-774909.jpg" alt="beautiful"/>
+           <h3>Anjlena</h3>
+           <p class="lead">This is beanie-beautiful-blonde image she is funy girl i love her</p>
+           <i class="fa fa-google-plus-square fa-lg"></i>
+           <i class="fa fa-facebook-square fa-lg"></i>
+           <i class="fa fa-twitter-square fa-lg"></i>
+           <i class="fa fa-youtube-square fa-lg"></i>
+         </div>
+       </div>
+      </div>
+
+     </div>
+   </div>
+
+ </section>
+   <!--End Section Our Team-->
+   <!--Start Section Subscribe-->
+   <section class="Subscribe text-center">
+     <div class="container data wow fadeInUp" data-wow-duration="1s" data-wow-offset="400">
+       <h2 class="h1">Keep In Touch</h2>
+       <p class="lead">Sign Up For Newsletter Dont Worry About Span We Hate It Too.</p>
+       <form class="form-inline">
+         <input class="form-control input-lg" type="text" placeholder="Write Your E-mail">
+         <button class="btn btn-danger btn-lg"><i class="fa fa-edit fa-lg"></i>Subscribe</button>
+       </form>
+     </div>
+   </section>
+   <!--End Section Subscribe-->
+   <!--Start Section Statistics-->
+   <section class="Statistics text-center">
+     <div class="data">
+       <div class="container">
+       <h2 class="h1">Our Main Statistics</h2>
+       <div class="row">
+         <div class="col-lg-3 col-sm-6">
+           <div class="stats">
+             <i class="fa fa-users fa-5x"></i>
+             <p>9,500</p>
+             <span>Sarisfied User</span>
+           </div>
+         </div>
+         <div class="col-lg-3 col-sm-6">
+             <div class="stats">
+               <i class="fa fa-comments fa-5x"></i>
+               <p>25,700</p>
+               <span>Posted Comments</span>
+             </div>
+         </div>
+          <div class="col-lg-3 col-sm-6">
+           <div class="stats">
+             <i class="fa fa-suitcase fa-5x"></i>
+             <p>3,200</p>
+             <span>Projects Done</span>
+           </div>
+         </div>
+         <div class="col-lg-3 col-sm-6">
+             <div class="stats">
+               <i class="fa fa-support fa-5x"></i>
+               <p>90,500</p>
+               <span>Tickets Archived</span>
+             </div>
+         </div>
+       </div>
+     </div>
+     </div>
+
+   </section>
+   <!--End Section Statistics-->
+   <!--Start Section Our Skills-->
+   <section class="our-skills">
+     <div class="container">
+       <h2 class="text-center h1">Our Skills</h2>
+       <div class="row">
+         <!--Start progress Skills-->
+         <div class="col-md-5">
+           <div class="skills-progress">
+             <div class="progress">
+               <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="80" aria-valuemin-"0" aria-valuemax="100" style="width: 80%">
+                 Html5/Css3
+               </div>
+             </div>
+             <div class="progress">
+               <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="90" aria-valuemin-"0" aria-valuemax="100" style="width: 90%">
+                 PHP/MySQL
+               </div>
+             </div>
+             <div class="progress">
+               <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="70" aria-valuemin-"0" aria-valuemax="100" style="width: 70%">
+                 Javascript/JQuery
+               </div>
+             </div>
+             <div class="progress">
+               <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="95" aria-valuemin-"0" aria-valuemax="100" style="width: 95%">
+                 Wordpress
+               </div>
+             </div>
+           </div>
+         </div>
+       <!--End progress Skills-->
+         <!--Start Team Info-->
+       <div class="col-md-6 col-md-offset-1">
+          <div class="skills-team">
+           <h3>About The Team</h3>
+           <p class="lead">We Are Specialised Desinging And Programming Team Passional About web Designe And Creating Degitai Idease We Will Transfer your idea To A Digital Dream</p>
+           <button type="button" class="btn btn-primary">Talk With A Profissional</button>
+          </div>
+       </div>
+       <!--End Team Info-->
+
+       </div>
+     </div>
+   </section>
+   <!--End Section Our Skills-->
+   <!-- Start Section Contact Us -->
+   <section class="contact-us text-center">
+     <div class="fields">
+       <div class="container">
+         <div class="row">
+           <i class="fa fa-headphones fa-5x"></i>
+           <h2 class="h1">Tell Us What You Fell</h2>
+           <p class="lead">Feel Free To Contact Us AnyTime</p>
+           <form role ="form">
+             <div class="col-md-6 wow bounceInLeft" data-wow-duration="1s" data-wow-offset="300">
+               <div class="form-group">
+                 <input type="text" class="form-control input-lg" placeholder="Username"/>
+               </div>
+               <div class="form-group">
+                 <input type="text" class="form-control input-lg" placeholder="E-mail"/>
+               </div>
+               <div class="form-group">
+                 <input type="text" class="form-control input-lg" placeholder="Cell Phone"/>
+               </div>
+             </div>
+             <div class="col-md-6 wow bounceInRight" data-wow-duration="1s" data-wow-offset="300">
+               <div class="form-group">
+                 <textarea class="form-control input-lg" placeholder="Your Message"></textarea>
+               </div>
+               <button type="button" class="btn btn-primary btn-lg btn-block">Contact us</button>
+             </div>
+
+           </form>
+         </div>
+
+       </div>
+         <!-- End contact form-->
+       </div>
+     </div>
+   </section>
+   <!-- End Section Contact Us -->
+   <!-- Start Section Our Clients -->
+   <div class="our-clients">
+     <div class="container">
+       <div class="row">
+         <ul class="list-unstyled">
+           <li class="col-md-2 col-xs-4"><img class="img-responsive center-block wow bounceIn" src="file:///C:/Users/Smart/Downloads/advertising-alphabet-blog-267363.jpg" alt="alphabet" data-wow-duration=".5s" data-wow-offset="200" data-wow-delay="0.5s"/></li>
+           <li class="col-md-2 col-xs-4"><img class="img-responsive center-block wow bounceIn" src="file:///C:/Users/Smart/Downloads/ads-adwords-alphabet-267401.jpg" alt="alphabet" data-wow-duration=".5s" data-wow-offset="200" data-wow-delay="1s"></li>
+           <li class="col-md-2 col-xs-4"><img class="img-responsive center-block wow bounceIn " src="file:///C:/Users/Smart/Downloads/advertising-alphabet-business-270637.jpg" alt="alphabet" data-wow-duration=".5s" data-wow-offset="200" data-wow-delay="1.5s"></li>
+           <li class="col-md-2 col-xs-4"><img class="img-responsive center-block wow bounceIn" src="file:///C:/Users/Smart/Downloads/alphabet-conceptual-display-267414.jpg" alt="alphabet" data-wow-duration=".5s" data-wow-offset="200" data-wow-delay="2s"></li>
+           <li class="col-md-2 col-xs-4"><img class="img-responsive center-block wow bounceIn" src="file:///C:/Users/Smart/Downloads/advertising-alphabet-business-262543.jpg" alt="alphabet" data-wow-duration=".5s" data-wow-offset="200" data-wow-delay="2.5s"></li>
+           <li class="col-md-2 col-xs-4"><img class="img-responsive center-block wow bounceIn" src="file:///C:/Users/Smart/Downloads/advertising-alphabet-blog-267371.jpg" alt="alphabet" data-wow-duration=".5s" data-wow-offset="200" data-wow-delay="3s"></li>
+         </ul>
+       </div>
+     </div>
+   </div>
+   <!-- End Section Our Clients -->
+   
+
+   <!-- Start Section Ultimate Footer -->
+   <section class="footer">
+     <div class="container">
+       <div class="row">
+           <div class="col-lg-4 col-md-6">
+             <h3>Sitemap</h3>
+             <ul class="list-unstyled three-columns">
+               <li>Home</li>
+               <li>About</li>
+               <li>Company</li>
+               <li>Code</li>
+               <li>Design</li>
+               <li>Host</li>
+               <li>Solution</li>
+               <li>Sitemap</li>
+               <li>Contact</li>
+             </ul>
+             <ul class="list-unstyled social-list">
+               <li><img src="file:///C:/Users/Smart/Downloads/image/circle-facebook_-256.png" alt="facebook"></li>
+               <li><img src="file:///C:/Users/Smart/Downloads/image/gmail.png" alt="gmail"></li>
+               <li><img src="file:///C:/Users/Smart/Downloads/image/14_-_RSS-256.png" alt="RSSook"></li>
+               <li><img src="file:///C:/Users/Smart/Downloads/image/social-03-256.png" alt="social"></li>
+               <li><img src="file:///C:/Users/Smart/Downloads/image/pinterest-256.png" alt="pinterest"></li>
+               <li><img src="file:///C:/Users/Smart/Downloads/image/social-02-256.png" alt="twitter"></li>
+             </ul>
+           </div>
+           <div class="col-lg-4 col-md-6">
+               <h3>Latest Articles</h3>
+
+               <div class="media">
+                 <a class="pull-left" href="#">
+                   <img class="media-object" src="file:///C:/Users/Smart/Downloads/aperture-blur-camera-206501.jpg" alt="camera"/>
+                 </a>
+
+                <div class="media-body">
+                 <h4 class="media-heading">Digital Camera</h4>
+                 A digital camera or digicam is a camera that captures photographs.
+                </div>
+               </div>
+                <div class="media">
+                 <a class="pull-left" href="#">
+                   <img class="media-object" src="file:///C:/Users/Smart/Downloads/apple-applications-apps-607812.jpg" alt="applications"/></a>
+                <div class="media-body">
+                 <h4 class="media-heading">Applications</h4>
+                  Application software is software designed to perform a group of coordinated functions,tasks.
+                </div>
+              </div>
+                <div class="media">
+                 <a class="pull-left" href="#">
+                   <img class="media-object" src="file:///C:/Users/Smart/Downloads/accounting-balance-banking-159804.jpg" alt="calculator"/></a>
+                <div class="media-body">
+                 <h4 class="media-heading">Calculator</h4>
+                  An electronic calculator is typically a portable electronic device used to perform calculations.
+                </div>
+             </div>
+               </div>
+              <div class="col-lg-4">
+               <h3>Our Awesome Work</h3>
+               <img class="img-thumbnail" src="file:///C:/Users/Smart/Downloads/image/company-conference-room-contemporary-1181406.jpg" alt="conference"/>
+               <img class="img-thumbnail" src="file:///C:/Users/Smart/Downloads/image/board-discussing-employees-1181533.jpg" alt="board"/>
+               <img class="img-thumbnail" src="file:///C:/Users/Smart/Downloads/image/discussing-facial-expression-furnitures-1181309.jpg" alt="expression"/>
+               <img class="img-thumbnail" src="file:///C:/Users/Smart/Downloads/advice-advise-advisor-7096.jpg" alt="advice"/>
+             </div>
+
+          </div>
+        
+               </div>
+             <div class="copyright text-center">
+                 Copyright &copy.2014 <span>Your Templet Name</span>.Inc
+             </div>
+           </section>
+           <!-- End Section Ultimate Footer -->
+           <!-- Start loading screen -->
+           <div class="loading-overlay">
+             <div class="spinner">
+               <div class="double-bounce1"></div>
+               <div class="double-bounce2"></div>
+             </div>
+           </div>
+        <!-- End loading screen -->
+        <!-- Start Scroll To Top Button -->
+        <div id="scroll-top">
+         <i class="fa fa-chevron-up fa-3x"></i>
+        </div>
+        <!-- End Scroll To Top Button -->
+
+
+
+
+
+
+
+
+           <script src="js/jquery-1.11.1.min.js"></script><!-- عبارة عن كود خاص بال JQuery -->
+           <script src="js/bootstrap.min.js"></script><!-- كود خاص بال JavaScript  الموجودة في ملف bootstrap -->
+           <script src="js/file.js"></script><!-- ده ملف نقوم بإنشائه -->
+           <script src="js/jquery.nicescroll.min.js"></script>
+           <script src="js/wow.min.js"></script>
+           <script>new WOW().init();</script><!-- عبارة عن دالة لازم تنكتب عشان ال WOW  تشتغل -->
+
+       </body>
+   </html>
+
